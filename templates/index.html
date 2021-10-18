@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- <link rel="stylesheet" href="../static/css/main.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Subreddits Classification</h1>
+            <h3>Or Shemtov</h3>
+        </div>
+        <div class="modelInput">
+            <div class="subredsMenu">
+                <select name="subreddit" id="subreddit">
+                    <option value="Choose Subreddit" disabled>Choose subreddit</option>
+                    <option value="funny">Funny</option>
+                    <option value="python">Python</option>
+                    <option value="math">Math</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="books">Books</option>
+                    <option value="dogs">Dogs</option>
+                    <option value="rock">Rock</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="movies">Movies</option>
+                    <option value="travel">Travel</option>
+                </select>
+            </div>
+            <form action="/" method="post">
+                <div class="postText">
+                    <textarea name="post" id="text" cols="30" rows="15" placeholder="Insert the post here"></textarea>
+                </div>
+                <button type="submit">Go!</button>
+            </form>
+        </div>
+        <div class="modelOutput">
+            {{ prediction }}
+        </div>
+    </div>
+</body>
+
+</html>

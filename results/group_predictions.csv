@@ -1,0 +1,11 @@
+,correct,wrong,accuracy
+sports,129,71,0.64
+gaming,147,46,0.76
+music,137,68,0.67
+python,141,30,0.82
+technology,119,91,0.57
+politics,144,40,0.78
+books,145,67,0.68
+travel,194,41,0.83
+science,174,22,0.89
+entertainment,120,59,0.67
